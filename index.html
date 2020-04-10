@@ -8,15 +8,28 @@
     <title>Pi colliding blocks</title>
     <style>
         #canvas {
-        border: solid 1px black;
+            border: solid 1px black;
+
         }
         .text {
-        max-width: 600px
+            max-width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            background-color: red;
+            text-align: center;
+        }
+        #canvas {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
       </style>
 </head>
 <body>
-    <div style="display: block; margin-left: auto; margin-right: auto; text-align: ceter;">
+    <div class="container">
         <h1>Block collision simulator</h1>
         <h2>By Katajisto & Jarvenpää</h2>
         <canvas id="canvas" width="700" height="500" ></canvas>
