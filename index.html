@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pi colliding blocks</title>
+    <style>
+        #canvas {
+        border: solid 1px black;
+        }
+        .text {
+        max-width: 600px
+        }
+      </style>
+</head>
+<body>
+    <div style="display: block; margin-left: auto; margin-right: auto;">
+        <h1>Block collision simulator</h1>
+        <h2>By Katajisto & Jarvenpää</h2>
+        <canvas id="canvas" width="700" height="500" ></canvas>
+        <br/>
+        Weight of block #1  <input id="weight1" value="1" type="number"/>
+        <br/>
+        Weight of block #2  <input id="weight2" value="1" type="number"/>
+        <br/>
+        Visual accuracy (lower is more accurate, but slower)  <input id="delay" value="1" type="number"/>
+        <br/>
+        <button onClick="reset()">Run</button>
+        <br/>
+        <br/>
+        <h3>More info</h3>
+        <p class="text">
+      This was first programmed using Go & SDL by Jarvenpää and Katajisto, then ported into JS by Katajisto.
+        </p><br/>
+        <a href="https://www.github.com/katajisto">Tuomas Katajisto</a><br/>
+        <a href="https://www.github.com/jarvnp">Matias Järvenpää</a><br/>
+      </div>
+</body>
+</html>
